@@ -187,6 +187,8 @@ height: 115px;
 margin-left: 132px;
 justify-content: space-between;
 margin-top: 70px;
+& a:hover {transform: scale(1.3);
+		transition: 1s;}
 }
 
 #flex2 {display: flex;
@@ -194,7 +196,9 @@ width: 982px;
 height: 151px;
 margin-left: 130px;
 justify-content: space-between;
-margin-top: 82px;}
+margin-top: 82px;
+& a:hover {transform: scale(1.3);
+		transition: 1s;}}
 
 #f1 {width: 155px;
 height: 110px;
@@ -583,7 +587,7 @@ position: relative;
 background-color: #0084b4;
 width: 27px;
 height: 27px;
-&:hover {transform: scale(1.5);
+&:hover {transform: scale(1.3);
 		transition: 1s;}}
 
 #a a:after { content: url(../img/img1.png); 
