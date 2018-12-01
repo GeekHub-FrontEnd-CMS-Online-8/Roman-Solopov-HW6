@@ -380,20 +380,87 @@ left: 208px;
 }}
 }
 
+#slider {border: 1px solid black;
+width: 955px;
+height: 349px;
+margin: auto;
+margin-top: 57px;}
+
+#slider input[name="switch"] {
+  display: none;
+}
+
+.switch {position: absolute;
+  left: 0;
+  z-index: 99;
+  text-align: center;
+  width: 100%;
+  margin-top: 297px;
+}
+
+.switch label {
+
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+border: 1px solid #212121;
+  cursor: pointer;
+  
+}
+
+
+
+.slider-inner {
+  overflow: hidden;
+}
+
+.slides {
+  transition: all 0.5s;
+  width: 500%;
+
+}
+
+.slides div {
+ width: 955px;
+height: 349px;
+float: left;
+
+}
+
+#btn1:checked~.slider-inner .slides {
+  transform: translate(0);
+}
+
+#btn2:checked~.slider-inner .slides {
+  transform: translate(-955px);
+}
+
+#btn3:checked~.slider-inner .slides {
+  transform: translate(-1910px);
+}
+#btn1:checked~.switch label[for="btn1"] {
+  background-color: #212121;
+}
+
+#btn2:checked~.switch label[for="btn2"] {
+  background-color: #212121;
+}
+
+#btn3:checked~.switch label[for="btn3"] {
+  background-color: #212121;
+}
+
 #limara {
 width: 955px;
 height: 349px;
-border: 1px solid #212121;
 margin: 0 auto;
-margin-top: 57px;
 & img {
 	position: absolute;
 	margin-left: 121px;
 	margin-top: 82px;	
 }
 }
-#slider {text-align: center;
-margin-top: 70px;}
+
 
 #tusi {
 	width: 570px;
@@ -423,6 +490,9 @@ font-weight: 400;
 line-height: 26px;
 text-transform: uppercase;}
 }
+
+#slide1 {text-align: center;}
+#slide3 {text-align: center;}
 
 #funfact {
 	height: 300px;
